@@ -1,0 +1,17 @@
+network:
+  ethernets:
+    enp0s3:
+      addresses:
+      -10.0.2.224/16
+      dhcp: false
+      routes: 
+      - to: default
+        via: 10.0.254.254
+      nameservers:
+      	  addresses:
+      	  - 8.8.8.8
+  version: 2
+  ethernets:   
+    enp0s8:
+      dhcp: true
+  version: 2
